@@ -8,19 +8,18 @@ Staff Technical Product Manager building B2B SaaS and developer-API products, wi
 
 ## What I'm building
 
-Two AI products I am developing independently. These are early and the source is private, so what follows is the what, the direction, and how I validate the work, not the internals.
+Two AI products built independently. ctx is finished and open source. The Gaffer is in active development, source private for now.
 
-### ctx: a self-learning context layer for AI coding agents
-ctx is a trust layer for AI coding agents (Claude Code and Cursor). Most tools compress an agent's context to save tokens and hope nothing breaks. ctx takes the opposite stance: it proves a context change is safe from your own behavior before it makes one, and stays fail-closed until it has that proof. Your original tool output always stays in the transcript.
+### ctx: a context layer for AI coding agents (finished, open source)
+ctx shows what a coding agent's context actually costs, then reclaims noisy tool output with a byte-for-byte way back. It started with a question about my own AI bill: 77,000 tokens of tool definitions rode along on every request. Partway in I found my safety metric could not have detected a failure, so I invalidated the claim and rebuilt the product around evidence you can check on your own sessions.
 
-- **Proof before action:** ctx learns from how you actually work and only changes what it can show, from your own data, will not cost you accuracy.
-- **A measurement layer, not a guesser:** it treats real outcomes as the source of truth instead of synthetic benchmarks, and will not act on a signal it has not earned.
-- **Cross-agent:** it understands sessions across more than one agent, so it can tell when the agent's own context handling, rather than your prompt, caused a problem.
-- **Experiment-driven:** continuous, automated A/B testing and a dashboard that shows cost per task and where the wins actually come from.
+- An itemized Context Bill built from your real sessions, not benchmarks
+- Trims gate on randomized comparisons of your own work, and every trim can be rewound byte for byte
+- Local by default: no account, no background telemetry
 
-**Direction:** from a personal tool today toward a shared "context truth" layer that scores whether your agents' context decisions are costing you corrections, across agents, and acts only on what it can prove.
+The project is done, deliberately. The full story, pivot included: [saurabhsharan.dev](https://saurabhsharan.dev)
 
-**Validation:** the whole system is built on production behavioral outcomes as ground truth, with deliberate honesty gates. It holds back from claiming a win until your own data clears a real bar, and refuses to publish headline numbers it cannot stand behind.
+Install: `brew install saurabh0392/ctx/ctx` or `cargo install ctx-agent` · [Source, MIT](https://github.com/saurabh0392/ctx)
 
 *Stack: Rust, SQLite, embedded dashboard.*
 
@@ -44,7 +43,7 @@ Three layers working together:
 
 ## Background
 
-Currently Staff Product Manager at **Shippo**, where I own the Address & Tracking API. Highlights:
+Currently Staff Product Manager at **Shippo**, where I own the Carrier Integrations domain: reusable platform components with engineering so integrations ship faster and break less, and carrier, customer, and geography bets with GTM. Highlights:
 - Built and shipped an agentic AI platform (retrieval over carrier specs and codebase, served to non-engineers via Slack) that cut on-call engineering hours by 40%.
 - Drove $3M+ in new GPV by leading the launch of 15+ shipping integrations.
 - Scaled carrier coverage 15x, from 68 to 1000+.
