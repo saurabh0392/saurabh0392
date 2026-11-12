@@ -1,8 +1,8 @@
 # Hi, I'm Saurabh 👋
 
-Staff Technical Product Manager building B2B SaaS and developer-API products, with a focus on self-serve growth, usage-based monetization, and AI systems that automate real work. Nearly a decade across product and engineering. I like owning a bet end to end, from the market thesis down to prototyping it myself.
+Senior Solutions Architect at Amazon Shipping. Before that, nearly a decade across product and engineering, most recently as a Staff PM at Shippo building developer APIs and AI systems for logistics. I build things out of curiosity, mostly AI tools, and I like owning a bet end to end, from the market thesis down to prototyping it myself.
 
-📍 Indianapolis, IN  ·  [LinkedIn](https://www.linkedin.com/in/saurabhsharan/)  ·  saurabhsharan03@gmail.com
+📍 New York, NY  ·  [saurabhsharan.dev](https://saurabhsharan.dev)  ·  [LinkedIn](https://www.linkedin.com/in/saurabhsharan/)  ·  saurabhsharan03@gmail.com
 
 ---
 
@@ -41,9 +41,17 @@ Three layers working together:
 
 ---
 
+## Writing
+
+[AI Inversion: Make the Model Ask the Questions](https://saurabhsharan.dev/writing/ai-inversion) (Nov 2026). For documents whose value lies in the decisions inside them, I stopped letting the model write. It asks the questions and I make each call.
+
+---
+
 ## Background
 
-Currently Staff Product Manager at **Shippo**, where I own the Carrier Integrations domain: reusable platform components with engineering so integrations ship faster and break less, and carrier, customer, and geography bets with GTM. Highlights:
+Senior Solutions Architect at **Amazon Shipping** since November 2026.
+
+Before that, Staff Product Manager at **Shippo** (2022–2026), where I owned the Carrier Integrations domain: reusable platform components with engineering so integrations shipped faster and broke less, and carrier, customer, and geography bets with GTM. Highlights:
 - Built and shipped an agentic AI platform (retrieval over carrier specs and codebase, served to non-engineers via Slack) that cut on-call engineering hours by 40%.
 - Drove $3M+ in new GPV by leading the launch of 15+ shipping integrations.
 - Scaled carrier coverage 15x, from 68 to 1000+.
@@ -56,4 +64,4 @@ Earlier: Technical PM at INECTA (Food ERP) and Software Engineer at IBM. NYU Mas
 
 **Product:** Strategy & vision, 0 to 1 and 1 to 10, roadmapping, prototyping
 **AI / ML:** Agentic AI, retrieval and vector search, LLM integration (local and hosted), human-in-the-loop design, evaluation and behavioral measurement
-**Build:** Rust, TypeScript, Node.js, React, Python, SQL, Unity (C#)
+**Build:** Rust, TypeScript, Node.js, React, Python, SQL, AWS, Unity (C#)
